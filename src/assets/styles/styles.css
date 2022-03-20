@@ -457,10 +457,10 @@ html {
 }
 /* //////////////////////////////////////////////////////// */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"); */
 .v-main-wrapper {
   max-width: 1140px;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .v-catalog {
   display: grid;
@@ -552,11 +552,16 @@ html {
 .pagination__value {
   text-decoration: none;
   color: #fff;
+  font-size: 14px;
 }
 .pagination__item_current {
   transform: scale(1.3);
+  font-weight: 700;
 }
+.pagination__item_current .pagination__value{
+  font-size: 18px;
 
+}
 @media (max-width: 480px) {
   .v-catalog {
     grid-template-columns: repeat(1, 1fr);
